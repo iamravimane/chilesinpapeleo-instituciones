@@ -1,0 +1,16 @@
+syntax: glob
+application/doctrine-cli.php
+application/config/config.php
+application/config/database.php
+application/cache
+application/logs
+assets/uploads
+tmp
+nbproject
+syntax:regexp
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+Thumbs.db$

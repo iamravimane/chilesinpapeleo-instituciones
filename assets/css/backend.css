@@ -1,0 +1,7 @@
+.well .nav {
+	margin-top:0px;
+}
+.navbar-fixed-top .brand.loged-user{
+	float:right;
+	font-size: 12px;
+}

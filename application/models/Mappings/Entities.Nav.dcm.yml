@@ -1,0 +1,21 @@
+Entities\Nav:
+  type: entity
+  table: navs
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    title:
+      type: string
+      nullable: false
+    alias:
+      type: string
+      nullable: false
+  oneToMany:
+    items:
+      targetEntity: NavItem
+      mappedBy: nav
+      orderBy:
+        ordering: asc

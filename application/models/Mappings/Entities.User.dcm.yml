@@ -1,0 +1,25 @@
+Entities\User:
+  type: entity
+  table: users
+  uniqueConstraints:
+    username_index:
+      columns:
+        - username
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    username:
+      type: string
+      nullable: false
+    password:
+      type: string
+      length: 128
+      nullable: false
+    fullname:
+      type: string
+      length: 255
+    admin:
+      type: boolean
